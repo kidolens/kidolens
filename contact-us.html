@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Concert+One&family=Monomaniac+One&family=Viga&display=swap');
+</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - Kidolens</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fb;
+      color: #333;
+    }
+
+    .container {
+      max-width: 100%x;
+      margin: 0px auto;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #2a7be4;
+      margin-bottom: 30px;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #2a7be4;
+      box-shadow: 0 0 0 2px rgba(42, 123, 228, 0.2);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      padding: 14px;
+      background-color: #2a7be4;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1e5aa6;
+    }
+
+    .info {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .info a {
+      color: #2a7be4;
+      text-decoration: none;
+    }
+
+    .info a:hover {
+      text-decoration: underline;
+    }
+    .navbar{
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    border-bottom: 1px solid gray;
+    position: fixed;
+    z-index: 999;
+}
+
+
+
+.navbar .navbar-header{
+    color :#000000;
+    font-family: "Audiowide", sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+
+}
+
+.navbar .navbar-item{
+    position: absolute;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 600;
+    right: 0;
+    vertical-align: middle;
+    top: 7.5px;
+}
+
+.navbar .navbar-item ul li{
+    display: inline;
+    margin-right: 15px;
+}
+
+.navbar .navbar-item ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 10px;
+    justify-items: center;
+}
+
+.navbar .navbar-item ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.navbar-btn{
+    display: none;
+}
+.footer {
+    background-image: url(images/3D-Text.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-kido {
+  font-size: 20px;
+  padding-top: 0%;
+  font-family: "Audiowide", sans-serif;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  color: #ffffff;
+}
+.footer-text {
+  font-size: 20px;
+  margin-top: 10px;
+  width: 50%;
+  color: #ffffff;
+
+}
+
+.footer-links-1-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: max-content;
+    text-decoration: none;
+    color: #ffffff;
+    padding-bottom: 0px;
+    
+
+}
+
+.company {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #000000;
+    width: 50px;
+    margin-bottom: 20px;
+}
+.footer-social {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.footer-copyright {
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.logo{
+    padding-top: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 50px;
+    background-color: transparent;
+    backdrop-filter: blur (10);
+    border: gray,1px,solid;
+    border-radius: 30px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.arrow-up {
+    position: fixed;
+    right: 80px;
+    width: 30px;
+    height: 30px;
+    bottom: 80px;
+    cursor: pointer;
+    z-index: 1000; 
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+.address p{
+    padding: 0;
+    margin: 0%;
+    text-align: center;
+}
+.address{
+    padding: 20px;
+    padding-left: 0px;
+}
+
+
+
+  </style>
+</head>
+<body>
+    <div class="navbar" >
+      <a href="main.html" class="navbar-header">KIDOLENS</a>
+      <button class="navbar-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-item hide">
+        <ul>
+          <li><a href="main.html">HOME</a></li>
+          <li><a href="#kido-head">KIDO KIT</a></li>
+          <li><a href="about us.html">ABOUT US</a></li>
+        </ul>
+      </div>
+    </div>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Have questions, feedback, or need support? We'd love to hear from you!</p>
+
+    <form action="mailto:support@kidolens.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="info">
+      <p><strong>Email:</strong> <a href="mailto:support@kidolens.com">support@kidolens.com</a></p>
+      <p><strong>Website:</strong> <a href="https://www.kidolens.com" target="_blank">www.kidolens.com</a></p>
+      <p><strong>Address:</strong> </p>
+      <div class="address">
+                <p>AR/VR Lab,Jeppiaar Institute Of Technology,</p>
+                <p>Kunnam, Sunguvarchatram, Sriperumbudur (TK),</p>
+                <p>Chennai - 631 604.</p>
+            </div>
+    </div>
+  </div>
+  <div class="footer">
+          <div class="footer-logo">
+            <h6 class="footer-kido">KIDOLENS</h6>
+            <div class="footer-text">KidoLens is revolutionizing education
+              through augmented reality, making learning more engaging,
+              interactive, and effective for students of all ages.
+            </div>
+            
+            <div class="footer-links-1">
+              <h6 class="company">Company</h6>
+              <a href="about us.html" class="footer-links-1-text">About Us</a>
+              <a href="#" class="footer-links-1-text">Careers</a>
+              <a href="#" class="footer-links-1-text">Partners</a>
+              <a href="#" class="footer-links-1-text">News</a>
+            </div>
+            <div class="footer-links-2">
+              <h6 class="company">Support</h6>
+              <a href="help.html" class="footer-links-1-text">Help Center</a>
+              <a href="contact-us.html" class="footer-links-1-text">Contact Us</a>
+              <a href="pp.html" class="footer-links-1-text">Privacy Policy</a>
+              <a href="tos.html" class="footer-links-1-text">Terms of Service</a>
+            </div>
+            <div class="footer-social">
+              <a class="logo"
+                href="https://www.facebook.com/share/1DiUV12p41/"><img
+                  src="images\facebook.svg" alt="Facebook"></a>
+              <a class="logo"
+                href="https://x.com/kidolens?t=6FljNiJV9cSK-Rbxrcoudw&s=09"><img
+                  src="images\twitter.svg" alt="Twitter"></a>
+              <a class="logo"
+                href="https://www.instagram.com/kidolens_official?igsh=dGk1cncxM243czF0"><img
+                  src="images\instagram.svg" alt="Instagram"></a>
+              <a class="logo" href="#"><img src="images\linkedin.svg"
+                  alt="LinkedIn"></a>
+            </div>
+            <div class="footer-copyright">
+              <p>&copy; 2025 Kidolens. All rights reserved..</p>
+
+            </div>
+
+          </div>
+
+          <img src="images\arrow_upward.svg" class="arrow-up" alt="Arrow Up"
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+
+      </div>
+</body>
+</html>

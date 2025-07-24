@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coming Soon | Kidolens</title>
+   <style>
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Concert+One&family=Monomaniac+One&family=Viga&display=swap');
+</style>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+     .navbar{
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    border-bottom: 1px solid gray;
+    position: fixed;
+    z-index: 999;
+}
+
+
+
+.navbar .navbar-header{
+    color :#ffffff;
+    font-family: "Audiowide", sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+
+}
+
+.navbar .navbar-item{
+    position: absolute;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 600;
+    right: 0;
+    vertical-align: middle;
+    top: 20px;
+}
+
+.navbar .navbar-item ul li{
+    display: inline;
+    margin-right: 15px;
+}
+
+.navbar .navbar-item ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 10px;
+    justify-items: center;
+}
+
+.navbar .navbar-item ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.navbar-btn{
+    display: none;
+}
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .coming-soon-container {
+      height: 100vh;
+      background: linear-gradient(135deg, #1e0147, #5b0b8d);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .logo {
+      height: 80px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #ccc;
+      max-width: 500px;
+      margin-bottom: 40px;
+    }
+
+    .subscribe-input {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    input[type="email"] {
+      padding: 10px 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      width: 250px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #a34bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #c77dff;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+    <div class="navbar">
+                    <a href="main.html" class="navbar-header">KIDOLENS</a>
+                    <button class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="navbar-item hide">
+                        <ul>
+                            <li><a href="main.html">HOME</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+  <div class="coming-soon-container">
+    <!-- Replace with your logo image -->
+
+    <h1>Something Amazing is Coming Soon!</h1>
+    <p>We’re working hard on a powerful AR learning experience. Stay tuned and be the first to know when we launch.</p>
+
+    <div class="footer">
+      &copy; 2025 Kidolens. All rights reserved.
+    </div>
+  </div>
+
+</body>
+</html>

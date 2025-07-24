@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Concert+One&family=Monomaniac+One&family=Viga&display=swap');
+</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Help Center - Kidolens</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fb;
+      color: #333;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0px auto;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.4rem;
+      color: #2a7be4;
+      margin-bottom: 10px;
+    }
+
+    p.intro {
+      text-align: center;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .faq {
+      margin-top: 30px;
+    }
+
+    .faq-item {
+      margin-bottom: 30px;
+    }
+
+    .faq-item h2 {
+      font-size: 1.2rem;
+      color: #1e5aa6;
+      margin-bottom: 10px;
+    }
+
+    .faq-item p {
+      margin: 0;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .contact-box {
+      background-color: #f0f4ff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    .contact-box h3 {
+      margin-top: 0;
+      color: #2a7be4;
+    }
+
+    .contact-box p {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: #2a7be4;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+    .navbar{
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    border-bottom: 1px solid gray;
+    position: fixed;
+    z-index: 999;
+}
+
+
+
+.navbar .navbar-header{
+    color :#000000;
+    font-family: "Audiowide", sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+
+}
+
+.navbar .navbar-item{
+    position: absolute;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 600;
+    right: 0;
+    vertical-align: middle;
+    top: 7.5px;
+}
+
+.navbar .navbar-item ul li{
+    display: inline;
+    margin-right: 15px;
+}
+
+.navbar .navbar-item ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 10px;
+    justify-items: center;
+}
+
+.navbar .navbar-item ul li a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.navbar-btn{
+    display: none;
+}
+.footer {
+    background-image: url(images/3D-Text.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-kido {
+  font-size: 20px;
+  padding-top: 0%;
+  font-family: "Audiowide", sans-serif;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  color: #ffffff;
+}
+.footer-text {
+  font-size: 20px;
+  margin-top: 10px;
+  width: 50%;
+  color: #ffffff;
+
+}
+
+.footer-links-1-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: max-content;
+    text-decoration: none;
+    color: #ffffff;
+    padding-bottom: 0px;
+    
+
+}
+
+.company {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #000000;
+    width: 50px;
+    margin-bottom: 20px;
+}
+.footer-social {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.footer-copyright {
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.logo{
+    padding-top: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 50px;
+    background-color: transparent;
+    backdrop-filter: blur (10);
+    border: gray,1px,solid;
+    border-radius: 30px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.arrow-up {
+    position: fixed;
+    right: 80px;
+    width: 30px;
+    height: 30px;
+    bottom: 80px;
+    cursor: pointer;
+    z-index: 1000; 
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+.address p{
+    padding: 0;
+    margin: 0%;
+}
+.address{
+    padding: 20px;
+    padding-left: 0px;
+}
+
+  </style>
+</head>
+<body>
+ <div class="navbar" >
+      <a href="main.html" class="navbar-header">KIDOLENS</a>
+      <button class="navbar-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-item hide">
+        <ul>
+          <li><a href="main.html">HOME</a></li>
+          <li><a href="#kido-head">KIDO KIT</a></li>
+          <li><a href="about us.html">ABOUT US</a></li>
+        </ul>
+      </div>
+    </div>
+
+  <div class="container">
+    <h1>Help Center</h1>
+    <p class="intro">Find answers to common questions or get in touch with our support team.</p>
+
+    <div class="faq">
+
+      <div class="faq-item">
+        <h2>What is Kidolens?</h2>
+        <p>Kidolens is an augmented reality (AR) learning app that makes education engaging and interactive for kids by combining curriculum content with immersive 3D experiences.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2>Is Kidolens safe for children?</h2>
+        <p>Yes, Kidolens is designed with safety and privacy in mind. We comply with COPPA and GDPR-K, and parental supervision is recommended while using AR features.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2>Do I need an internet connection to use Kidolens?</h2>
+        <p>Some AR content may require an internet connection to load or update. However, basic features may work offline after initial setup.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2>How do I report a bug or issue?</h2>
+        <p>If you encounter a bug or technical problem, please contact us at <a href="mailto:support@kidolens.com">support@kidolens.com</a> with a description and screenshot, if possible.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2>How do I delete my account or my child’s data?</h2>
+        <p>You can request account or data deletion by emailing us at <a href="mailto:support@kidolens.com">support@kidolens.com</a>. We’ll process your request within 7 working days.</p>
+      </div>
+
+      <div class="faq-item">
+        <h2>Is there a subscription fee?</h2>
+        <p>Kidolens offers free and premium content. You can enjoy basic lessons at no cost, but full access requires a subscription. Check the pricing inside the app for current plans.</p>
+      </div>
+
+    </div>
+
+    <div class="contact-box">
+      <h3>Still need help?</h3>
+      <p><strong>Email:</strong> <a href="mailto:support@kidolens.com">support@kidolens.com</a></p>
+      <p><strong>Website:</strong> <a href="https://www.kidolens.com" target="_blank">www.kidolens.com</a></p>
+      <p><strong>Address:</strong> [Insert Company Address]</p>
+    </div>
+  </div>
+<div class="footer">
+          <div class="footer-logo">
+            <h6 class="footer-kido">KIDOLENS</h6>
+            <div class="footer-text">KidoLens is revolutionizing education
+              through augmented reality, making learning more engaging,
+              interactive, and effective for students of all ages.
+            </div>
+            
+            <div class="footer-links-1">
+              <h6 class="company">Company</h6>
+              <a href="about us.html" class="footer-links-1-text">About Us</a>
+              <a href="#" class="footer-links-1-text">Careers</a>
+              <a href="#" class="footer-links-1-text">Partners</a>
+              <a href="#" class="footer-links-1-text">News</a>
+            </div>
+            <div class="footer-links-2">
+              <h6 class="company">Support</h6>
+              <a href="help.html" class="footer-links-1-text">Help Center</a>
+              <a href="contact-us.html" class="footer-links-1-text">Contact Us</a>
+              <a href="pp.html" class="footer-links-1-text">Privacy Policy</a>
+              <a href="tos.html" class="footer-links-1-text">Terms of Service</a>
+            </div>
+            <div class="footer-social">
+              <a class="logo"
+                href="https://www.facebook.com/share/1DiUV12p41/"><img
+                  src="images\facebook.svg" alt="Facebook"></a>
+              <a class="logo"
+                href="https://x.com/kidolens?t=6FljNiJV9cSK-Rbxrcoudw&s=09"><img
+                  src="images\twitter.svg" alt="Twitter"></a>
+              <a class="logo"
+                href="https://www.instagram.com/kidolens_official?igsh=dGk1cncxM243czF0"><img
+                  src="images\instagram.svg" alt="Instagram"></a>
+              <a class="logo" href="#"><img src="images\linkedin.svg"
+                  alt="LinkedIn"></a>
+            </div>
+            <div class="footer-copyright">
+              <p>&copy; 2025 Kidolens. All rights reserved..</p>
+
+            </div>
+
+          </div>
+
+          <img src="images\arrow_upward.svg" class="arrow-up" alt="Arrow Up"
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+
+      </div>
+</body>
+</html>
